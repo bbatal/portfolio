@@ -238,53 +238,39 @@
 
 // right-hand side aside
 .theme-mode {
-    // width: 39px;
+    max-width: 40px;
     
     .theme-buttons {
-        margin-top: 30vh;
+        margin-top: 27.5vh;
         background-color: rgb(242, 242, 242);
         border-radius: 30px;
-        padding: 2em 0.125em 3em 0.125em;
+        padding: 1.3em 0em 2.1em 0em;
         display: flex;
         flex-direction: column;
-        gap: 2.4em;
+        align-items: center;
+        gap: 1.3em;
 
 
         button {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg); 
             background-color: transparent;
             border: none;
-            // -webkit-transform: rotate(90deg);
-            // -moz-transform: rotate(90deg);
-            // -ms-transform: rotate(90deg);
-            // -o-transform: rotate(90deg); 
-            display: flex;
-            align-items: center;
-            gap: 0.3em;
             cursor: pointer;
-
-            p {
-                font-size: 0.8rem;
-            }
+            font-size: 0.8rem;
         }
 
         .light-mode {
-            padding: 10px 10px 10px 36px;
-            background: url('../../assets/sun.png') 10px 10px no-repeat;
+            padding: 7px 10px 7px 36px;
+            border-radius: 30px;
+            background: white url(../../assets/sun.png) 10px 10px no-repeat;
         }
 
         .dark-mode {
-            padding: 10px 10px 10px 36px;
+            padding: 7px 10px 7px 36px;
             background: url(../../assets/moon.png) 10px 10px no-repeat;
-        }
-
-        .theme-logo-sun {
-            width: 16px;
-            height: 16px;
-        }
-
-        .theme-logo-moon {
-            width: 15px;
-            height: 15px;
         }
     }
 }
