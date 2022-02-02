@@ -1,0 +1,49 @@
+// imports
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../../assets/Larsseit/Larsseit.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
+
+// General Styles.scss
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Larsseit', sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+img {
+    // responsive image styles
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
