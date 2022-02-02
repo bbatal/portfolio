@@ -4,7 +4,12 @@
     .header-main-content {
         border-right: 2px solid rgb(231, 231, 231);
         border-left: 2px solid rgb(231, 231, 231);
+         min-height: 65vh;
     }
+
+    // .header-main-content .wrapper {
+    //     justify-content: space-between;
+    // }
 
     .header-nav {
     width: max-content;
@@ -31,10 +36,21 @@
     // asides
     .social-links {
         position: relative;
-    }
 
+         .social-links-list {
+        position: relative;
+        margin-top: 28vh;
+
+        .social-links-list::before {
+        height: 50px;
+        }
+        }
+    }
+    
+   
     .theme-mode {
         position: relative;
+        margin-top: 22vh;
     }
 
     .header-img img {

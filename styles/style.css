@@ -348,7 +348,7 @@ img {
   top: 0;
   right: 0;
   left: clamp(0.05em, 0.05em + 2vw, 3em);
-  font-size: clamp(0.6rem, 0.6rem + 16.65vw, 12.5rem);
+  font-size: clamp(0.6rem, 0.6rem + 16.7vw, 12.5rem);
   font-family: "Advent Pro", sans-serif;
   text-shadow: 3px 0px 7px rgba(245, 245, 245, 0.8), -3px 0px 7px rgba(245, 245, 245, 0.8), 0px 4px 7px rgba(245, 245, 245, 0.8);
   color: white;
@@ -432,7 +432,7 @@ img {
 }
 .social-links .social-links-list {
   position: relative;
-  margin-top: 28vh;
+  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +457,7 @@ img {
 .social-links .social-links-list::before {
   content: "";
   width: 1px;
-  height: 50px;
+  height: 20px;
   background-color: #d6d6d6;
   position: absolute;
   bottom: 118px;
@@ -477,7 +477,7 @@ img {
   right: 0;
 }
 .theme-mode .theme-buttons {
-  margin-top: 27.5vh;
+  margin-top: 70px;
   background-color: #f2f2f2;
   border-radius: 30px;
   padding: 1.3em 0em 2.1em 0em;
@@ -517,6 +517,7 @@ img {
   .header-main-content {
     border-right: 2px solid #e7e7e7;
     border-left: 2px solid #e7e7e7;
+    min-height: 65vh;
   }
 
   .header-nav {
@@ -551,9 +552,17 @@ img {
   .social-links {
     position: relative;
   }
+  .social-links .social-links-list {
+    position: relative;
+    margin-top: 28vh;
+  }
+  .social-links .social-links-list .social-links-list::before {
+    height: 50px;
+  }
 
   .theme-mode {
     position: relative;
+    margin-top: 22vh;
   }
 
   .header-img img {
