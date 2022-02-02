@@ -272,12 +272,6 @@ img {
   height: auto;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 90%;
-}
-
 @font-face {
   font-family: "Larsseit Thin";
   src: url("../../assets/Larsseit/Larsseit-Thin.otf") format("opentype");
@@ -292,17 +286,15 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0.5em;
+  position: relative;
 }
 
 .header-main-content {
-  border-right: 2px solid #e7e7e7;
-  border-left: 2px solid #e7e7e7;
   width: 100%;
   min-height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0.5em;
 }
 
 .header-main-content .wrapper {
@@ -319,11 +311,7 @@ img {
 }
 
 .header-nav {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto;
-  padding: 1.5em 0 0.5em 0;
+  display: none;
 }
 
 .header-nav-links {
@@ -347,7 +335,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 0 4em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   position: relative;
 }
 
@@ -356,8 +347,8 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  left: 0;
-  font-size: clamp(0.6rem, 0.6rem + 16vw, 12.5rem);
+  left: clamp(0.05em, 0.05em + 2vw, 3em);
+  font-size: clamp(0.6rem, 0.6rem + 16.65vw, 12.5rem);
   font-family: "Advent Pro", sans-serif;
   text-shadow: 3px 0px 7px rgba(245, 245, 245, 0.8), -3px 0px 7px rgba(245, 245, 245, 0.8), 0px 4px 7px rgba(245, 245, 245, 0.8);
   color: white;
@@ -366,8 +357,6 @@ img {
 }
 
 .header-content-info {
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +365,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 .header-content-info .name {
   font-size: 0.85rem;
@@ -406,93 +399,16 @@ img {
 
 .header-img {
   position: relative;
-}
-
-.header-img img {
-  width: 800px;
-}
-
-.star {
-  top: -180px;
-  left: 180px;
-  position: relative;
-  display: block;
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid #2a292a;
-  border-left: 100px solid transparent;
-  -moz-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-}
-
-.star::before {
-  border-bottom: 80px solid #2a292a;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: -45px;
-  left: -65px;
-  display: block;
-  content: "";
-  -webkit-transform: rotate(-35deg);
-  -moz-transform: rotate(-35deg);
-  -ms-transform: rotate(-35deg);
-  -o-transform: rotate(-35deg);
-}
-
-.star::after {
-  position: absolute;
-  display: block;
-  top: 3px;
-  left: -105px;
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid #2a292a;
-  border-left: 100px solid transparent;
-  -webkit-transform: rotate(-70deg);
-  -moz-transform: rotate(-70deg);
-  -ms-transform: rotate(-70deg);
-  -o-transform: rotate(-70deg);
-  content: "";
-}
-
-.circle {
-  color: white;
-  position: absolute;
-  left: -60px;
-  bottom: -100px;
-  z-index: 10;
-  background-color: #323232;
-  border-radius: 50%;
-  word-break: normal;
-  width: 110px;
-  height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
-.circle span {
-  font-size: 1.8rem;
-  font-family: "Larsseit", sans-serif;
-}
-.circle .span-word {
-  font-size: 0.7rem;
-  color: #525252;
-  text-transform: lowercase;
+
+.header-img img {
+  width: 60%;
 }
 
 .social-links {
@@ -511,6 +427,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  position: absolute;
+  left: 0;
 }
 .social-links .social-links-list {
   position: relative;
@@ -554,6 +472,9 @@ img {
 
 .theme-mode {
   max-width: 40px;
+  padding: 0 0.1em 0 0;
+  position: absolute;
+  right: 0;
 }
 .theme-mode .theme-buttons {
   margin-top: 27.5vh;
@@ -590,4 +511,68 @@ img {
 .theme-mode .theme-buttons .dark-mode {
   padding: 7px 10px 7px 36px;
   background: url(../../assets/moon.png) 10px 10px no-repeat;
+}
+
+@media (min-width: 650px) {
+  .header-main-content {
+    border-right: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+  }
+
+  .header-nav {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+    padding: 1.5em 0 0.5em 0;
+    display: block;
+  }
+
+  .flex-header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 0 0 4em;
+    position: relative;
+  }
+
+  .flex-header-content::before {
+    font-size: clamp(0.7rem, 0.6rem + 15vw, 12.5rem);
+  }
+
+  .header-main-content {
+    margin: 0 0.5em;
+  }
+
+  .social-links {
+    position: relative;
+  }
+
+  .theme-mode {
+    position: relative;
+  }
+
+  .header-img img {
+    width: 750px;
+  }
+
+  .header-content-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 100px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
