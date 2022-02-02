@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -231,4 +232,356 @@ html {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Larsseit";
+  src: url("../../assets/Larsseit/Larsseit.otf") format("opentype");
+}
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Larsseit", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  line-height: 1em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Larsseit Thin";
+  src: url("../../assets/Larsseit/Larsseit-Thin.otf") format("opentype");
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.5em;
+  position: relative;
+}
+
+.header-main-content {
+  width: 100%;
+  min-height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-main-content .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+.theme-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+}
+
+.flex-header-content::before {
+  content: "DEVELOPER";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: clamp(0.05em, 0.05em + 2vw, 3em);
+  font-size: clamp(0.6rem, 0.6rem + 16.7vw, 12.5rem);
+  font-family: "Advent Pro", sans-serif;
+  text-shadow: 3px 0px 7px rgba(245, 245, 245, 0.8), -3px 0px 7px rgba(245, 245, 245, 0.8), 0px 4px 7px rgba(245, 245, 245, 0.8);
+  color: white;
+  border: 1px solid white;
+  z-index: -5;
+}
+
+.header-content-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.header-content-info .name {
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #595959;
+  padding-left: 2.7em;
+  position: relative;
+  font-family: "Larsseit Thin", sans-serif;
+}
+.header-content-info .name::before {
+  content: "";
+  height: 1px;
+  width: 2em;
+  background-color: #d6d6d6;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+}
+.header-content-info button {
+  max-width: 140px;
+  padding: 0.7em 0.3em;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.header-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-img img {
+  width: 60%;
+}
+
+.social-links {
+  padding: 1.2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+}
+.social-links .social-links-list {
+  position: relative;
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social-links .social-links-list li {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  margin-bottom: 1em;
+  color: #595959;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.social-links .social-links-list::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  background-color: #d6d6d6;
+  position: absolute;
+  bottom: 118px;
+}
+
+.aside-logo {
+  text-transform: lowercase;
+  border: 1px solid #323232;
+  padding: 0.3em 0.6em 0.25em 0.6em;
+  border-radius: 50%;
+}
+
+.theme-mode {
+  max-width: 40px;
+  padding: 0 0.1em 0 0;
+  position: absolute;
+  right: 0;
+}
+.theme-mode .theme-buttons {
+  margin-top: 70px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  padding: 1.3em 0em 2.1em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.3em;
+}
+.theme-mode .theme-buttons button {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.theme-mode .theme-buttons .light-mode {
+  padding: 7px 10px 7px 36px;
+  border-radius: 30px;
+  background: white url(../../assets/sun.png) 10px 10px no-repeat;
+}
+.theme-mode .theme-buttons .dark-mode {
+  padding: 7px 10px 7px 36px;
+  background: url(../../assets/moon.png) 10px 10px no-repeat;
+}
+
+@media (min-width: 650px) {
+  .header-main-content {
+    border-right: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+    min-height: 65vh;
+  }
+
+  .header-nav {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+    padding: 1.5em 0 0.5em 0;
+    display: block;
+  }
+
+  .flex-header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 0 0 4em;
+    position: relative;
+  }
+
+  .flex-header-content::before {
+    font-size: clamp(0.7rem, 0.6rem + 15vw, 12.5rem);
+  }
+
+  .header-main-content {
+    margin: 0 0.5em;
+  }
+
+  .social-links {
+    position: relative;
+  }
+  .social-links .social-links-list {
+    position: relative;
+    margin-top: 28vh;
+  }
+  .social-links .social-links-list .social-links-list::before {
+    height: 50px;
+  }
+
+  .theme-mode {
+    position: relative;
+    margin-top: 22vh;
+  }
+
+  .header-img img {
+    width: 750px;
+  }
+
+  .header-content-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 100px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+  }
 }

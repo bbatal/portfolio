@@ -9,51 +9,62 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        <aside>
-            <span>b</span>
+    <header class="header">
+        <aside class="social-links">
+            <span class="aside-logo">b</span>
 
-            <ul>
+            <ul class="social-links-list">
                 <li><a href="">LI</a></li>
                 <li><a href="">GH</a></li>
                 <li><a href="">TW</a></li>
             </ul>
         </aside>
 
-        <section class="header-content">
-            <nav>
-                <!-- <a>hamburger</a> -->
-                <ul>
-                    <li><a>home</a></li>
-                    <li><a>about me</a></li>
-                    <li><a>portfolio</a></li>
-                    <li><a>contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="flex-header-content">
-                <div class="header-content-info">
-                    <h1>Front End Developer</h1>
-                    <h2>Bart Batalinski</h2>
-                    <button>maybe will do something</button>
-                </div>
-
-                <div class="header-img">
-                    <img src="https://via.placeholder.com/300x550" alt="">
-                    <div class="star">
-                        <div class="circle">
-                            <span>3</span>
-                            <span>years experience</span>
+            <section class="header-main-content">
+                <div class="wrapper">
+                    <nav class="header-nav">
+                        <!-- <a>hamburger</a> -->
+                        <ul class="header-nav-links">
+                            <li class="nav-link"><a>home</a></li>
+                            <li class="nav-link"><a>about me</a></li>
+                            <li class="nav-link"><a>portfolio</a></li>
+                            <li class="nav-link"><a>contact</a></li>
+                        </ul>
+                    </nav>
+        
+                    <div class="flex-header-content">
+                        <div class="header-content-info">
+                            <h1>Front-End Engineer</h1>
+                            <h2 class="name">Bart Batalinski</h2>
+                            <button>contact me</button>
+                        </div>
+        
+                        <div class="header-img">
+                            <img src="./assets/profile_placeholder.png" alt="">
+                            <!-- <div class="star">
+                                <div class="circle">
+                                    <span>3</span>
+                                    <span class="span-word">years</span>
+                                    <span class="span-word">experience</span>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <aside>
+                </div> <!-- .wrapper ends here -->
+            </section>
+
+        <aside class="theme-mode">
             <div class="theme-buttons">
-                <button>light</button>
-                <button>dark</button>
+                <!-- https://www.flaticon.com/free-icons/sun -->
+                <!-- thanks to flaticon for these icons -->
+                <button class="light-mode">
+                    light
+                </button>
+                <!-- https://www.flaticon.com/free-icons/moon -->
+                <button class="dark-mode">
+                    dark
+                </button>
             </div>
         </aside>
     </header> <!-- header section ends-->
