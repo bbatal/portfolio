@@ -71,6 +71,10 @@
         margin: 0 auto;
         width: 90%;
     }
+    // main section begins
+    main {
+    padding: 0px 60px 0 57.5px;
+    }
 
     // .services section begins
     .services {
@@ -94,6 +98,13 @@
         .wrapper {
             max-width: 700px;
         }
+    }
+
+    // .projects Section begins
+    .projects {
+        border-right: 2px solid rgb(231, 231, 231);
+        border-left: 2px solid rgb(231, 231, 231);
+        border-bottom: 2px solid rgb(231, 231, 231);
     }
 
 }

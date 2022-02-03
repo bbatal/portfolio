@@ -1,13 +1,55 @@
 // .projects start here
 .projects {
+    padding: 2.5em 0;
+
     ul {
         display: flex;
         flex-direction: column;
+
+        li {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 700px;
     }
 }
 
 .project-text {
     display: flex;
     justify-content: space-between;
+    padding: 0.9em 0 2.4em 0;
+    
+    span {
+        padding-top: 0.2em;
+        margin-right: 20px;
+    }
+}
 
+.project-content-short,
+.project-content-long {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    padding: 0.2em 0 0 0;
+
+    h3 {
+        margin-bottom: 0.2em;
+    }
+
+    p {
+        text-transform: uppercase;
+    }
+}
+
+.project-links {
+    padding-top: 0.25em;
+    flex-shrink: 0;
 }

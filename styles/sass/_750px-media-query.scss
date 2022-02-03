@@ -1,0 +1,24 @@
+// 750px media query
+@media(min-width: 750px) {
+
+     // .projects Section begins
+    .projects {
+        ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li {
+                width: calc(50% - 1.4em);
+                margin: 0.7em;
+            }
+        }
+
+        li:nth-child(3) .project-content-long {
+            margin-top: -107px;
+        }
+
+        .project-text {
+            padding: 0.9em 0 1em 0;
+        }
+    }
+}
