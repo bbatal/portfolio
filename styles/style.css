@@ -269,19 +269,29 @@ h3 {
 }
 
 button {
-  min-width: 100px;
-  padding: 0.7em 0.8em;
+  min-width: 140px;
+  padding: 0.7em 1.3em;
   background-color: black;
   color: white;
   border: none;
   font-size: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
+  -webkit-transition: color 0.18s ease-in, background-color 0.2s ease-in;
+  transition: color 0.18s ease-in, background-color 0.2s ease-in;
 }
 
-p {
+button:hover,
+button:focus {
+  background-color: #5a5a5a;
+  color: #ebebeb;
+}
+
+p,
+input,
+textarea {
   font-size: 0.8rem;
-  color: #9d9d9d;
+  color: #515151;
   font-weight: 100;
 }
 
@@ -648,6 +658,7 @@ img {
 .project-text span {
   padding-top: 0.2em;
   margin-right: 20px;
+  letter-spacing: 1.5px;
 }
 
 .project-content-short,
@@ -676,6 +687,103 @@ img {
   padding-top: 0.25em;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.contact-me {
+  padding: 2.5em 0;
+  text-align: center;
+}
+.contact-me .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-me .wrapper h2 {
+  max-width: 300px;
+  font-size: 2rem;
+}
+.contact-me .wrapper .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.5em;
+  margin: 1em 0;
+}
+.contact-me .wrapper .contact-info h3 {
+  margin-bottom: 0.3em;
+}
+.contact-me .wrapper .contact-info-work {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.contact-me .wrapper .contact-info-work::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fbce36;
+  position: absolute;
+  left: -20px;
+}
+.contact-me .wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+}
+.contact-me .wrapper form input,
+.contact-me .wrapper form textarea {
+  width: 100%;
+  margin-bottom: 0.5em;
+  border: none;
+  border: 1px solid #d0d0d0;
+  padding: 0.8em 0 0.8em 1.3em;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.contact-me .wrapper input::-webkit-input-placeholder, .contact-me .wrapper textarea::-webkit-input-placeholder {
+  color: #515151;
+  opacity: 0.8;
+}
+.contact-me .wrapper input::-moz-placeholder, .contact-me .wrapper textarea::-moz-placeholder {
+  color: #515151;
+  opacity: 0.8;
+}
+.contact-me .wrapper input:-ms-input-placeholder, .contact-me .wrapper textarea:-ms-input-placeholder {
+  color: #515151;
+  opacity: 0.8;
+}
+.contact-me .wrapper input::-ms-input-placeholder, .contact-me .wrapper textarea::-ms-input-placeholder {
+  color: #515151;
+  opacity: 0.8;
+}
+.contact-me .wrapper input::placeholder,
+.contact-me .wrapper textarea::placeholder {
+  color: #515151;
+  opacity: 0.8;
+}
+.contact-me .wrapper .btn-container {
+  margin: 0 auto;
 }
 
 @media (min-width: 650px) {
@@ -782,6 +890,12 @@ img {
     border-left: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
   }
+
+  .contact-me {
+    border-right: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+  }
 }
 @media (min-width: 750px) {
   .projects ul {
@@ -801,5 +915,22 @@ img {
   }
   .projects .project-text {
     padding: 0.9em 0 1em 0;
+  }
+
+  .contact-me .wrapper form input {
+    width: calc(50% - 0.5em);
+  }
+  .contact-me .wrapper form input:first-of-type {
+    margin-right: 1em;
+  }
+  .contact-me .wrapper .contact-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-me .wrapper .contact-info-work {
+    width: calc(100% / 3);
+    left: -5px;
   }
 }
