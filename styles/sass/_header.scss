@@ -78,6 +78,7 @@
         padding-left: 2.7em;
         position: relative;
         font-family: 'Larsseit Thin', sans-serif;
+        text-transform: uppercase;
         
     }
 
@@ -89,16 +90,6 @@
         position: absolute;
         top: 0.5em;
         left: 0;
-    }
-
-    button {
-        max-width: 140px;
-        padding: 0.7em 0.3em;
-        background-color: black;
-        color: white;
-        border: none;
-        font-size: 0.8rem;
-        cursor: pointer;
     }
 }
 
@@ -254,7 +245,7 @@
         margin-top: 70px;
         background-color: rgb(242, 242, 242);
         border-radius: 30px;
-        padding: 1.3em 0em 2.1em 0em;
+        padding: 1.8em 0em 2.1em 0em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -268,12 +259,14 @@
             -o-transform: rotate(90deg); 
             background-color: transparent;
             border: none;
+            color: black;
             cursor: pointer;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
+            text-transform: capitalize;
         }
 
         .light-mode {
-            padding: 7px 10px 7px 36px;
+            padding: 7px 10px 7px 20px;
             border-radius: 30px;
             background: white url(../../assets/sun.png) 10px 10px no-repeat;
         }
