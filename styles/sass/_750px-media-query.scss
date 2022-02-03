@@ -39,6 +39,9 @@
 
             .contact-info-work {
                 width: calc(100% / 3);
+            }
+
+            .contact-info-work::before {
                 left: -5px;
             }
 
