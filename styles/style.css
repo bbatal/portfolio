@@ -249,6 +249,17 @@ body {
   text-transform: uppercase;
 }
 
+header,
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+main {
+  padding: 0px 60px 0 57.5px;
+}
+
 h1 {
   margin: 0;
   font-family: "Advent Pro", sans-serif;
@@ -292,12 +303,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1400px;
   margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 0.5em;
   position: relative;
 }
 
@@ -531,12 +540,12 @@ img {
 }
 .services {
   text-align: center;
-  padding: 0 2em;
+  padding: 3em 0 3.7em 0;
 }
 .services h2 {
   font-size: 1.5rem;
   text-transform: capitalize;
-  margin: 1em auto 1.5em auto;
+  margin: 0em auto 1.5em auto;
   max-width: 300px;
 }
 
@@ -647,5 +656,19 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+  }
+
+  .services {
+    border-right: 2px solid #e7e7e7;
+    border-left: 2px solid #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
+  }
+  .services .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
