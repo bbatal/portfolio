@@ -722,7 +722,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.9em;
+  gap: 2.5em;
   margin: 1em 0;
 }
 .contact-me .wrapper .contact-info h3 {
@@ -733,6 +733,7 @@ img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  width: calc(100% / 3);
 }
 .contact-me .wrapper .contact-info-work::before {
   content: "";
@@ -741,7 +742,7 @@ img {
   border-radius: 50%;
   background-color: #fbce36;
   position: absolute;
-  left: -20px;
+  left: -5px;
 }
 .contact-me .wrapper form {
   display: -webkit-box;
@@ -749,7 +750,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 800px;
 }
 .contact-me .wrapper form input,
 .contact-me .wrapper form textarea {
