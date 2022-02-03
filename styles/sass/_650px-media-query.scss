@@ -65,10 +65,24 @@
     }
 
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-}
+    // wrapper styles are defined
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    // .services section begins
+    .services {
+        border-right: 2px solid rgb(231, 231, 231);
+        border-left: 2px solid rgb(231, 231, 231);
+        border-bottom: 2px solid rgb(231, 231, 231);
+
+        .skills {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
 
 }
