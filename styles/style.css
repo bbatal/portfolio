@@ -269,14 +269,22 @@ h3 {
 }
 
 button {
-  min-width: 100px;
-  padding: 0.7em 0.8em;
+  min-width: 140px;
+  padding: 0.7em 1.3em;
   background-color: black;
   color: white;
   border: none;
   font-size: 0.8rem;
   cursor: pointer;
   text-transform: uppercase;
+  -webkit-transition: color 0.18s ease-in, background-color 0.2s ease-in;
+  transition: color 0.18s ease-in, background-color 0.2s ease-in;
+}
+
+button:hover,
+button:focus {
+  background-color: #5a5a5a;
+  color: #ebebeb;
 }
 
 p,
@@ -749,7 +757,7 @@ img {
   margin-bottom: 0.5em;
   border: none;
   border: 1px solid #d0d0d0;
-  padding: 0.6em 0 0.6em 0.9em;
+  padding: 0.8em 0 0.8em 1.3em;
   font-size: 0.8rem;
   font-weight: 100;
 }
@@ -907,5 +915,18 @@ img {
   }
   .projects .project-text {
     padding: 0.9em 0 1em 0;
+  }
+
+  .contact-me .wrapper form input {
+    width: calc(50% - 0.5em);
+  }
+  .contact-me .wrapper form input:first-of-type {
+    margin-right: 1em;
+  }
+  .contact-me .wrapper .contact-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
