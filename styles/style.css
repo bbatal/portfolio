@@ -733,7 +733,6 @@ img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  width: calc(100% / 3);
 }
 .contact-me .wrapper .contact-info-work::before {
   content: "";
@@ -742,7 +741,7 @@ img {
   border-radius: 50%;
   background-color: #fbce36;
   position: absolute;
-  left: -5px;
+  left: -20px;
 }
 .contact-me .wrapper form {
   display: -webkit-box;
@@ -929,5 +928,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .contact-me .wrapper .contact-info-work {
+    width: calc(100% / 3);
+    left: -5px;
   }
 }

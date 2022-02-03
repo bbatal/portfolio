@@ -37,6 +37,11 @@
                 flex-direction: row;
             }
 
+            .contact-info-work {
+                width: calc(100% / 3);
+                left: -5px;
+            }
+
         }
     }
 }
