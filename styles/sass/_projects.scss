@@ -1,0 +1,13 @@
+// .projects start here
+.projects {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.project-text {
+    display: flex;
+    justify-content: space-between;
+
+}
