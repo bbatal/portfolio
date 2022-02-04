@@ -25,8 +25,8 @@
     position: fixed;
     width: min-content;
     min-width: 0;
-    right: 15px;
-    top: 15px;
+    right: 1.2em;
+    top: 23px;
     padding: 0;
     cursor: pointer;
     z-index: 10;
@@ -140,137 +140,14 @@
     width: 60%;
 }
 
-// star styling
-// star design came from following tutorial
-// https://coursesweb.net/css/star-shapes-css_cs
-// .star {
-//     top: -180px;
-//     left: 180px;
-//     position: relative;
-//     display: block;
-//     width: 0px;
-//     height: 0px;
-//     border-right: 100px solid transparent;
-//     border-bottom: 70px solid rgb(42, 41, 42);
-//     border-left: 100px solid transparent;
-//     -moz-transform: rotate(0deg);
-//     -webkit-transform: rotate(0deg);
-//     -ms-transform: rotate(0deg);
-//     -o-transform: rotate(0deg);
-// }
-
-// .star::before {
-//     border-bottom: 80px solid rgb(42, 41, 42);
-//     border-left: 30px solid transparent;
-//     border-right: 30px solid transparent;
-//     position: absolute;
-//     height: 0;
-//     width: 0;
-//     top: -45px;
-//     left: -65px;
-//     display: block;
-//     content:"";
-//     -webkit-transform: rotate(-35deg);
-//     -moz-transform: rotate(-35deg);
-//     -ms-transform: rotate(-35deg);
-//     -o-transform: rotate(-35deg);
-// }
-
-// .star::after {
-//  position: absolute;
-//  display: block;
-//  top: 3px;
-//  left: -105px;
-//  width: 0px;
-//  height: 0px;
-//  border-right: 100px solid transparent;
-//  border-bottom: 70px solid rgb(42, 41, 42);
-//  border-left: 100px solid transparent;
-//  -webkit-transform: rotate(-70deg);
-//  -moz-transform: rotate(-70deg);
-//  -ms-transform: rotate(-70deg);
-//  -o-transform: rotate(-70deg); 
-//  content:"";
-// }
-
-// .circle {
-//     color: white;
-//     position: absolute;
-//     left: -60px;
-//     bottom: -100px;
-//     z-index: 10;
-//     background-color: rgb(50, 50, 50);
-//     border-radius: 50%;
-//     word-break: normal;
-//     width: 110px;
-//     height: 110px;
-
-//     // positioning words
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     text-align: center;
-//     span {
-//         font-size: 1.8rem;
-//         font-family: 'Larsseit', sans-serif;
-//     }
-
-//     .span-word {
-//         font-size: 0.7rem;
-//         color: rgb(82, 82, 82);
-//         text-transform: lowercase;
-//     }
-// }
-
-
-// left hand side aside
-// .social-links {
-//     padding: 1.2em 0;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     margin: 0 auto;
-//     position: absolute;
-//     left: 0;
-
-//     .social-links-list {
-//         position: relative;
-//         margin-top: 65px;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-
-//         li {
-//             -webkit-transform: rotate(90deg);
-//             -moz-transform: rotate(90deg);
-//             -ms-transform: rotate(90deg);
-//             -o-transform: rotate(90deg); 
-//             margin-bottom: 1em;
-//             color: rgb(89, 89, 89);
-//             font-size: 0.8rem;
-//             letter-spacing: 1px;
-//         }
-//     }
-
-//     .social-links-list::before {
-//         content: '';
-//         width: 1px;
-//         height: 20px;
-//         background-color: rgb(214, 214, 214);
-//         position: absolute;
-//         bottom: 118px;
-//     }
-// }
-
 .aside-logo {
     text-transform: lowercase;
     border: 1px solid rgb(50, 50, 50);
     padding: 0.3em 0.6em 0.25em 0.6em;
     border-radius: 50%;
     position: absolute;
-    top: 15px;
-    left: 10px;
+    top: 24px;
+    left: 2.1em;
 }
 
 // right-hand side aside
