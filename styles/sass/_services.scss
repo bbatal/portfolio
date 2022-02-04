@@ -8,7 +8,7 @@
 // services section begins here
 .services {
     text-align: center;
-    padding: 2.5em 0;
+    padding: 2em 0;
 
     h2 {
         font-size: 1.5rem;
@@ -19,33 +19,50 @@
 
 }
 
-// article container
-.skills {
+.skills ul {
     display: flex;
-    flex-direction: column;
-    gap: 2em;
+    font-size: 3rem;
+    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    li {
+        margin: 0.4em 1em;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+
+// article container
+// .skills {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 2em;
+// }
 
 // article styling
-.branding {
-    display: flex;
-    flex-direction: column;
-    max-width: 280px;
-    margin: 0 auto;
-    h3 {
-        text-transform: capitalize;
-        margin-bottom: 0.6em;
-    }
+// .branding {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 280px;
+//     margin: 0 auto;
+//     h3 {
+//         text-transform: capitalize;
+//         margin-bottom: 0.6em;
+//     }
 
-    p {
-        text-transform: lowercase;
-    }
+//     p {
+//         text-transform: lowercase;
+//     }
 
-    .services-span {
-        font-family: 'Larsseit-Thin';
-        font-size: 2.3rem;
-        color: rgb(193, 193, 193);
-        letter-spacing: 1.5px;
-        margin-bottom: 0.5em;
-    }
-}
+//     .services-span {
+//         font-family: 'Larsseit-Thin';
+//         font-size: 2.3rem;
+//         color: rgb(193, 193, 193);
+//         letter-spacing: 1.5px;
+//         margin-bottom: 0.5em;
+//     }
+// }

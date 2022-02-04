@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -24,15 +25,15 @@
             </ul>
         </aside> -->
 
-            <section class="header-main-content">
+            <section class="header-main-content" id="home">
                 <div class="wrapper">
                     <nav class="header-nav">
                         <button class="hamburger-menu">hamburger</button>
                         <ul class="header-nav-links">
-                            <li class="nav-link"><a>home</a></li>
-                            <li class="nav-link"><a>about me</a></li>
-                            <li class="nav-link"><a>portfolio</a></li>
-                            <li class="nav-link"><a>contact</a></li>
+                            <li class="nav-link"><a href="#home">home</a></li>
+                            <li class="nav-link"><a href="#about-me">about me</a></li>
+                            <li class="nav-link"><a href="#projects">portfolio</a></li>
+                            <li class="nav-link"><a href="#contact-me">contact</a></li>
                         </ul>
                     </nav>
         
@@ -43,7 +44,7 @@
                         </div>
         
                         <div class="header-img">
-                            <img src="./assets/profile_placeholder.png" alt="">
+                            <img src="./assets/profile_placeholder.png" alt="profile picture of white man looking into the camera">
                             <!-- <div class="star">
                                 <div class="circle">
                                     <span>3</span>
@@ -74,41 +75,38 @@
 
     <!-- main section begins -->
     <main>
-        <!-- .services section begins -->
-        <section class="services">
-            <div class="wrapper">
-                <h2>I create beautiful web applications</h2>
-                <div class="skills">
-                    <article class="branding">
-                        <span class="services-span">01</span>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium exercitationem possimus facere ipsa optio deserunt obcaecati nisi unde perferendis?</p>
-                    </article>
-                    <article class="branding">
-                        <span class="services-span">02</span>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium exercitationem possimus facere ipsa optio deserunt obcaecati nisi unde perferendis?</p>
-                    </article>
-                    <article class="branding">
-                        <span class="services-span">03</span>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium exercitationem possimus facere ipsa optio deserunt obcaecati nisi unde perferendis?</p>
-                    </article>
-                </div>
-
-            </div> <!-- .wrapper ends here -->
-        </section>
-        <!-- .services section ends -->
-
         <!-- .about-me section begins -->
         <section class="about-me" id="about-me">
             <div class="wrapper">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. At similique iure quia est, reprehenderit corrupti fuga doloremque aliquid dignissimos mollitia!</h2>
+                <h2>Hey there! Welcome to my site. My name is Bart and I am a developer based out of Hamilton Ontario</h2>
     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in temporibus veniam numquam, beatae ad neque ratione sequi expedita atque ipsa itaque laudantium deleniti? Facere harum dicta ducimus explicabo fugit.</p>
+                <p>I am a recent graduate of <strong>Juno College</strong> and enjoy playing chess, running, and re-watching my favorite shows for the 6th time in a row (once a year gives me enough time to forget a detail or two). Hope you get a chance to check out some of my projects and i'd love any feedback on potential improvements</p>
             </div>
         </section>
         <!-- .about-me section ends -->
+
+        <!-- .services section begins -->
+        <section class="services">
+            <div class="wrapper">
+                <h2>My Tech Stack</h2>
+                <div class="skills">
+                    <ul>
+                        <li><span class="iconify" data-icon="akar-icons:react-fill"></span></li>
+                        <li><span class="iconify" data-icon="akar-icons:javascript-fill"></span></li>
+                        <li><span class="iconify" data-icon="tabler:brand-css3"></span></li>
+                        <li><span class="iconify" data-icon="file-icons:firebase"></span></li>
+                        <li><span class="iconify" data-icon="akar-icons:angular-fill"></span></li>
+                        <li><span class="iconify" data-icon="ant-design:html5-filled"></span></li>
+                        <li><span class="iconify" data-icon="cib:typescript"></span></li>
+                        <li><span class="iconify" data-icon="akar-icons:sass-fill"></span></li>
+                        <li><span class="iconify" data-icon="bi:git"></span></li>
+                        <li><span class="iconify" data-icon="akar-icons:jquery-fill"></span></li>
+                    </ul>
+                </div>
+        
+            </div> <!-- .wrapper ends here -->
+        </section>
+        <!-- .services section ends -->
 
         <!-- .projects section begins -->
         <section class="projects" id="projects">
@@ -116,12 +114,12 @@
                 <ul>
                     <li>
                         <div class="project-content-short">
-                            <img src="https://via.placeholder.com/300x300">
+                            <img src="./assets/proj-1.png" alt="screenshot of project 1 website">
                             <div class="project-text">
                                 <span>01.</span>
                                 <div class="project-title">
                                     <h3>PDF Conversion</h3>
-                                    <p>twas a journey was it not, jugi boyy?</p>
+                                    <p>Agency style static site PSD conversion</p>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/bbatal/bart-batalinski-project-1" target="_blank" rel="noreferrer">code</a>
@@ -132,12 +130,12 @@
                     </li>
                     <li>
                         <div class="project-content-long">
-                            <img src="https://via.placeholder.com/300x400">
+                            <img src="https://via.placeholder.com/300x400" alt="screenshot of project 2 website">
                             <div class="project-text">
                                 <span>02.</span>
                                 <div class="project-title">
                                     <h3>Doggo Generator</h3>
-                                    <p>twas a journey was it not, jugi boyy?</p>
+                                    <p>using the Dog API, random dog and cat photos are generated dynamically</p>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/Lorraine-and-Bart-Co/doggo-generator" target="_blank" rel="noreferrer">code</a>
@@ -148,12 +146,12 @@
                     </li>
                     <li>
                         <div class="project-content-long">
-                            <img src="https://via.placeholder.com/300x400">
+                            <img src="https://via.placeholder.com/300x400" alt="screenshot of project 3 website">
                             <div class="project-text">
                                 <span>03.</span>
                                 <div class="project-title">
                                     <h3>The Book Spot</h3>
-                                    <p>twas a journey was it not, jugi boyy?</p>
+                                    <p>A react app that uses the google book API & firebase and lets users find and save books/magazines based on genre</p>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/bbatal/bart-batalinski-project-3" target="_blank" rel="noreferrer">code</a>
@@ -164,12 +162,12 @@
                     </li>
                     <li>
                         <div class="project-content-short">
-                            <img src="https://via.placeholder.com/300x300">
+                            <img src="https://via.placeholder.com/300x300" alt="screenshot of project 4 website">
                             <div class="project-text">
                                 <span>04.</span>
                                 <div class="project-title">
                                     <h3>Nutrition Navigator</h3>
-                                    <p>twas a journey was it not, jugi boyy?</p>
+                                    <p>A react app that uses the nutritionix API and firebase + routing to display information about user food queries</p>
                                 </div>
                                 <div class="project-links">
                                     <a href="https://github.com/Abdul-Bart-Solomon-Co/nutrition-navigator" target="_blank" rel="noreferrer">code</a>

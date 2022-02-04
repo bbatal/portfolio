@@ -259,7 +259,7 @@ footer {
 h1 {
   margin: 0;
   font-family: "Advent Pro", sans-serif;
-  font-size: 3rem;
+  font-size: clamp(1rem, 1rem + 10vw, 3.5rem);
   letter-spacing: 1.5px;
   line-height: 1em;
   text-transform: uppercase;
@@ -331,7 +331,7 @@ img {
 
 .header-main-content {
   width: 100%;
-  min-height: 65vh;
+  min-height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,6 +367,15 @@ img {
   gap: 2em;
 }
 
+.nav-link {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
+
 .flex-header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,20 +385,6 @@ img {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   position: relative;
-}
-
-.flex-header-content::before {
-  content: "DEVELOPER";
-  position: absolute;
-  top: 0;
-  font-size: clamp(0.6rem, 0.9rem + 15vw, 10.6rem);
-  left: calc(100% / 2);
-  margin-left: -48%;
-  font-family: "Advent Pro", sans-serif;
-  text-shadow: 3px 0px 7px rgba(245, 245, 245, 0.8), -3px 0px 7px rgba(245, 245, 245, 0.8), 0px 4px 7px rgba(245, 245, 245, 0.8);
-  color: white;
-  border: 1px solid white;
-  z-index: -5;
 }
 
 .header-content-info {
@@ -455,7 +450,7 @@ img {
 }
 .services {
   text-align: center;
-  padding: 2.5em 0;
+  padding: 2em 0;
 }
 .services h2 {
   font-size: 1.5rem;
@@ -464,7 +459,23 @@ img {
   max-width: 300px;
 }
 
-.skills {
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.skills ul li {
+  margin: 0.4em 1em;
+  width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,38 +483,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2em;
-}
-
-.branding {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 280px;
-  margin: 0 auto;
-}
-.branding h3 {
-  text-transform: capitalize;
-  margin-bottom: 0.6em;
-}
-.branding p {
-  text-transform: lowercase;
-}
-.branding .services-span {
-  font-family: "Larsseit-Thin";
-  font-size: 2.3rem;
-  color: #c1c1c1;
-  letter-spacing: 1.5px;
-  margin-bottom: 0.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-me {
   text-align: center;
-  padding: 3em 0 3.6em 0;
+  padding: 1em 0 1em 0;
   line-height: 1.2em;
 }
 .about-me .wrapper {
@@ -524,7 +511,7 @@ img {
 }
 
 .projects {
-  padding: 2.5em 0;
+  padding: 1em 0;
 }
 .projects ul {
   display: -webkit-box;
@@ -593,7 +580,7 @@ img {
 }
 
 .contact-me {
-  padding: 2.5em 0;
+  padding: 1em 0;
   text-align: center;
 }
 .contact-me .wrapper {
@@ -777,22 +764,6 @@ img {
     position: relative;
   }
 
-  .social-links {
-    position: relative;
-  }
-  .social-links .social-links-list {
-    position: relative;
-    margin-top: 28vh;
-  }
-  .social-links .social-links-list .social-links-list::before {
-    height: 50px;
-  }
-
-  .theme-mode {
-    position: relative;
-    margin-top: 22vh;
-  }
-
   .header-img img {
     width: 750px;
   }
@@ -820,6 +791,7 @@ header {
   }
 
   .services {
+    padding: 3em 0;
     border-right: 2px solid #e7e7e7;
     border-left: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
@@ -834,6 +806,7 @@ header {
   }
 
   .about-me {
+    padding: 3em 0 3.6em 0;
     border-right: 2px solid #e7e7e7;
     border-left: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
@@ -843,12 +816,14 @@ header {
   }
 
   .projects {
+    padding: 3.9em 0;
     border-right: 2px solid #e7e7e7;
     border-left: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;
   }
 
   .contact-me {
+    padding: 2.5em 0;
     border-right: 2px solid #e7e7e7;
     border-left: 2px solid #e7e7e7;
     border-bottom: 2px solid #e7e7e7;

@@ -25,30 +25,6 @@
     position: relative;
     }
 
-    // .flex-header-content::before {
-    // font-size: clamp(0.7rem, 0.6rem + 15vw, 11rem);
-    // }
-
-    // asides
-    .social-links {
-        position: relative;
-
-         .social-links-list {
-        position: relative;
-        margin-top: 28vh;
-
-        .social-links-list::before {
-        height: 50px;
-        }
-        }
-    }
-    
-   
-    .theme-mode {
-        position: relative;
-        margin-top: 22vh;
-    }
-
     .header-img img {
         width: 750px;
     }
@@ -67,6 +43,7 @@
         margin: 0 auto;
         width: 90%;
     }
+
     // main section begins
     main, 
     footer,
@@ -76,6 +53,7 @@
 
     // .services section begins
     .services {
+        padding: 3em 0;
         border-right: 2px solid rgb(231, 231, 231);
         border-left: 2px solid rgb(231, 231, 231);
         border-bottom: 2px solid rgb(231, 231, 231);
@@ -89,6 +67,7 @@
 
     // .about-me section begins
     .about-me {
+        padding: 3em 0 3.6em 0;
         border-right: 2px solid rgb(231, 231, 231);
         border-left: 2px solid rgb(231, 231, 231);
         border-bottom: 2px solid rgb(231, 231, 231);
@@ -100,6 +79,7 @@
 
     // .projects Section begins
     .projects {
+        padding: 3.9em 0;
         border-right: 2px solid rgb(231, 231, 231);
         border-left: 2px solid rgb(231, 231, 231);
         border-bottom: 2px solid rgb(231, 231, 231);
@@ -107,6 +87,7 @@
 
     // .contact-me section begins
     .contact-me {
+        padding: 2.5em 0;
         border-right: 2px solid rgb(231, 231, 231);
         border-left: 2px solid rgb(231, 231, 231);
         border-bottom: 2px solid rgb(231, 231, 231);
