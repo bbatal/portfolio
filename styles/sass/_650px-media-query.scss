@@ -25,13 +25,9 @@
     position: relative;
     }
 
-    .flex-header-content::before {
-    font-size: clamp(0.7rem, 0.6rem + 15vw, 12.5rem);
-    }
-
-    .header-main-content {
-    margin: 0 0.5em;
-    }
+    // .flex-header-content::before {
+    // font-size: clamp(0.7rem, 0.6rem + 15vw, 11rem);
+    // }
 
     // asides
     .social-links {
@@ -73,8 +69,9 @@
     }
     // main section begins
     main, 
-    footer {
-    padding: 0px 60px 0 57.5px;
+    footer,
+    header {
+    padding: 0px 57px 0 57px;
     }
 
     // .services section begins
