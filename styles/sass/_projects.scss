@@ -15,7 +15,7 @@
     .wrapper {
         width: 90%;
         margin: 0 auto;
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 
@@ -33,9 +33,23 @@
 
 .project-content-short,
 .project-content-long {
-    max-width: 350px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
+}
+
+.project-content-short img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.project-content-long img {
+    width: 450px;
+    height: 557px;
+    object-fit: cover;
+    border: 1px solid black;
 }
 
 .project-title {
@@ -53,4 +67,13 @@
 .project-links {
     padding-top: 0.25em;
     flex-shrink: 0;
+}
+
+.project-links * {
+    margin-left: 0.4em;
+}
+
+.project-links a:hover,
+.project-links a:active {
+    text-shadow: 2px 4px 3px rgba(251, 206, 54, 0.3);
 }

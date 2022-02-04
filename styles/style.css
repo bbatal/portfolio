@@ -348,8 +348,8 @@ img {
   width: -moz-min-content;
   width: min-content;
   min-width: 0;
-  right: 15px;
-  top: 15px;
+  right: 1.2em;
+  top: 23px;
   padding: 0;
   cursor: pointer;
   z-index: 10;
@@ -471,8 +471,8 @@ img {
   padding: 0.3em 0.6em 0.25em 0.6em;
   border-radius: 50%;
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 24px;
+  left: 2.1em;
 }
 
 @font-face {
@@ -564,7 +564,7 @@ img {
 .projects .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .project-text {
@@ -584,7 +584,7 @@ img {
 
 .project-content-short,
 .project-content-long {
-  max-width: 350px;
+  max-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,6 +592,22 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.project-content-short img {
+  width: 450px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
+}
+
+.project-content-long img {
+  width: 450px;
+  height: 557px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
 }
 
 .project-title {
@@ -608,6 +624,15 @@ img {
   padding-top: 0.25em;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.project-links * {
+  margin-left: 0.4em;
+}
+
+.project-links a:hover,
+.project-links a:active {
+  text-shadow: 2px 4px 3px rgba(251, 206, 54, 0.3);
 }
 
 .contact-me {
@@ -818,7 +843,7 @@ img {
   main,
 footer,
 header {
-    padding: 0px 57px 0 57px;
+    padding: 0px 30px 0 30px;
   }
 
   .services {
@@ -934,8 +959,8 @@ header {
         flex-wrap: wrap;
   }
   .projects ul li {
-    width: calc(50% - 1.4em);
-    margin: 0.7em;
+    width: calc(50% - 2.4em);
+    margin: 1.2em;
   }
   .projects li:nth-child(3) .project-content-long {
     margin-top: -107px;
