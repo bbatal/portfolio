@@ -38,14 +38,31 @@
 }
 
 .project-text::after {
+    position: absolute;
+    top: -1.5em;
+    right: 1em;
+    left: 1em;
+    z-index: 1;
+    height: 3.5em;
+    background: #fff;
     content: '';
-    height: 2px;
-    width: 100%;
-    top: 60px;
-    background-color: white;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    position:   absolute;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,4em,0) scale3d(1,0.023,1) ;
+	transform: translate3d(0,4em,0) scale3d(1,0.023,1);
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
 }
+
+// .project-text::after {
+//     content: '';
+//     height: 2px;
+//     width: 100%;
+//     top: 60px;
+//     background-color: white;
+//     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+//     position:   absolute;
+// }
 
 // hover animations
 .project-content-long img,
@@ -55,9 +72,33 @@
 }
 
 .tech-stack {
-    opacity: 1;
     display: flex;
+    padding: 1.6em 0.5em;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+    opacity: 0;
+}
 
+.project-content-long:hover img,
+.project-content-short:hover img {
+    opacity: 0.5;
+}
+
+.project-content-long:hover .tech-stack,
+.project-content-short:hover .tech-stack {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+    z-index: 5;
+}
+
+.project-content-long:hover .project-text::after,
+.project-content-short:hover .project-text::after {
+    opacity: 0.7;
+	-webkit-transform: translate3d(0,5em,0) scale3d(1,1,1) ;
+	transform: translate3d(0,5em,0) scale3d(1,1,1);
 }
 
 .project-content-short,
