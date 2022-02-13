@@ -266,6 +266,11 @@ h1 {
   text-transform: uppercase;
 }
 
+svg:hover,
+svg:hover {
+  opacity: 0.6;
+}
+
 h3 {
   font-weight: 400;
 }
@@ -557,7 +562,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.projects .project-list li {
+.projects .project-list .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,15 +610,16 @@ img {
   right: 1em;
   left: 1em;
   z-index: 1;
-  height: 3.5em;
+  height: 6em;
+  bottom: 1em;
   background: #fff;
   content: "";
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
-  -webkit-transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
-  transform: translate3d(0, 4em, 0) scale3d(1, 0.023, 1);
+  -webkit-transform: translate3d(0, 4em, 0) scale3d(1, 0.015, 1);
+  transform: translate3d(0, 4em, 0) scale3d(1, 0.015, 1);
   -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
 }
@@ -628,7 +634,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.6em 0.5em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0.5em 0 0.5em;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -636,6 +647,14 @@ img {
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
   opacity: 0;
+}
+.tech-stack svg {
+  font-size: 1.6rem;
+}
+.tech-stack li {
+  margin: 0.5em 1em;
+  width: calc((100% / 4) - 2em);
+  text-align: center;
 }
 
 .project-content-long:hover img,
@@ -1041,11 +1060,11 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .projects .project-list li {
+  .projects .project-list .project {
     width: calc(50% - 2.4em);
     margin: 1.2em;
   }
-  .projects li:nth-child(3) .project-content-long {
+  .projects .project:nth-child(3) .project-content-long {
     margin-top: -107px;
   }
 
