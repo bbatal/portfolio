@@ -2,7 +2,7 @@
 .projects {
     padding: 1em 0;
 
-    ul {
+    .project-list {
         display: flex;
         flex-direction: column;
 
@@ -21,18 +21,48 @@
 
 .project-text {
     display: flex;
-    justify-content: space-between;
-    padding: 0.9em 0 2.4em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(10%);
+    width: max-content;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
     
     span {
-        padding-top: 0.2em;
-        margin-right: 20px;
+        margin-right: 10px;
         letter-spacing: 1.5px;
     }
 }
 
+.project-text::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 60px;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    position:   absolute;
+}
+
+// hover animations
+.project-content-long img,
+.project-content-short img {
+    -webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.tech-stack {
+    opacity: 1;
+    display: flex;
+
+}
+
 .project-content-short,
 .project-content-long {
+    position: relative;
     max-width: 450px;
     display: flex;
     flex-direction: column;
@@ -43,6 +73,7 @@
     height: 450px;
     object-fit: cover;
     border: 1px solid black;
+    // opacity: 0.6;
 }
 
 .project-content-long img {
@@ -53,11 +84,11 @@
 }
 
 .project-title {
-    padding: 0.2em 0 0 0;
-
-    h3 {
-        margin-bottom: 0.2em;
-    }
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    padding: 0.2em 1em;
 
     p {
         text-transform: uppercase;

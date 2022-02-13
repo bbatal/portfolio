@@ -24,7 +24,7 @@
 
      // .projects Section begins
     .projects {
-        ul {
+        .project-list {
             flex-direction: row;
             flex-wrap: wrap;
 
@@ -38,9 +38,6 @@
             margin-top: -107px;
         }
 
-        .project-text {
-            padding: 0.9em 0 1em 0;
-        }
     }
 
     // .contact-me section begins
