@@ -27,6 +27,7 @@
     position: absolute;
     top: calc(10%);
     width: max-content;
+    max-width: 100%;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -43,7 +44,7 @@
     right: 1em;
     left: 1em;
     z-index: 1;
-    height: 6em;
+    height: 10em;
     bottom: 1em;
     background: #fff;
     content: '';
@@ -82,6 +83,14 @@
         width: calc((100% / 4) - 2em);
         text-align: center;
     }
+
+    .li-text {
+        width: calc(100% - 2em);
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+        text-align: start;
+    }
 }
 
 .project-content-long:hover img,
@@ -116,15 +125,17 @@
     width: 450px;
     height: 450px;
     object-fit: cover;
-    border: 1px solid black;
+    // border: 1px solid black;
     // opacity: 0.6;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
 
 .project-content-long img {
     width: 450px;
     height: 557px;
     object-fit: cover;
-    border: 1px solid black;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    // border: 1px solid black;
 }
 
 .project-title {
@@ -142,13 +153,16 @@
 .project-links {
     padding-top: 0.25em;
     flex-shrink: 0;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    p {
+        line-height: 1.5;
+    }
 
-.project-links * {
-    margin-left: 0.4em;
-}
-
-.project-links a:hover,
-.project-links a:active {
-    text-shadow: 2px 4px 3px rgba(251, 206, 54, 0.3);
+    a {
+         text-shadow: 2px 4px 3px rgba(251, 206, 54, 0.3);
+    }
 }
