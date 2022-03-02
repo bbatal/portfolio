@@ -24,23 +24,20 @@
 
      // .projects Section begins
     .projects {
-        ul {
+        .project-list {
             flex-direction: row;
             flex-wrap: wrap;
 
-            li {
+            .project {
                 width: calc(50% - 2.4em);
                 margin: 1.2em;
             }
         }
 
-        li:nth-child(3) .project-content-long {
+        .project:nth-child(3) .project-content-long {
             margin-top: -107px;
         }
 
-        .project-text {
-            padding: 0.9em 0 1em 0;
-        }
     }
 
     // .contact-me section begins
