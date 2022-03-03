@@ -424,54 +424,29 @@ img {
 }
 
 .header-content-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.5em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  margin-bottom: 20%;
+  line-height: 1.5;
 }
 .header-content-info .name {
   font-size: 0.85rem;
   letter-spacing: 3px;
   color: #595959;
-  padding-left: 2.7em;
   position: relative;
   font-family: "Larsseit Thin", sans-serif;
   text-transform: uppercase;
 }
-.header-content-info .name::before {
-  content: "";
-  height: 1px;
-  width: 2em;
-  background-color: #d6d6d6;
-  position: absolute;
-  top: 0.5em;
-  left: 0;
+.header-content-info span {
+  display: inline;
 }
-
-.header-img {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 4em 1.5em 2.5em 1.5em;
+.header-content-info h1.name {
+  display: inline-block;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+  color: black;
 }
-
-.header-img img {
-  max-width: 100%;
-  max-height: 700px;
-  -o-object-fit: contain;
-     object-fit: contain;
+.header-content-info h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
 }
 
 .aside-logo {
@@ -482,6 +457,109 @@ img {
   position: absolute;
   top: 24px;
   left: 2.1em;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+}
+
+.word {
+  display: inline-block;
+  color: black;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.word span {
+  position: absolute;
+  top: -20px;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  2% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  18% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  2% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  18% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+.word span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.word span:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.word span:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.word span:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.word span:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 @font-face {
@@ -530,8 +608,11 @@ img {
 
 .about-me {
   text-align: center;
-  padding: 1em 0 1em 0;
+  padding: 2em;
   line-height: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .about-me .wrapper {
   display: -webkit-box;
@@ -549,7 +630,20 @@ img {
 .about-me h2 {
   font-size: 1.2rem;
 }
-
+.about-me .about-me-img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 1.5em 2.5em 1.5em;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
 .projects {
   padding: 1em 0;
 }
@@ -750,10 +844,6 @@ img {
 }
 .project-links p {
   line-height: 1.5;
-}
-.project-links a {
-  text-shadow: 2px 4px 3px rgba(251, 206, 54, 0.3);
-  margin: 0 0.5em;
 }
 
 .contact-me {

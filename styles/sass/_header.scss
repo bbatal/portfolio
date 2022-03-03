@@ -101,46 +101,35 @@
 // }
 
 .header-content-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 20%;
+    line-height: 1.5;
 
     .name {
         font-size: 0.85rem;
         letter-spacing: 3px;
         color: rgb(89, 89, 89);
-        padding-left: 2.7em;
         position: relative;
         font-family: 'Larsseit Thin', sans-serif;
         text-transform: uppercase;
         
     }
 
-    .name::before {
-        content: '';
-        height: 1px;
-        width: 2em;
-        background-color: rgb(214, 214, 214);
-        position: absolute;
-        top: 0.5em;
-        left: 0;
+    span {
+        display: inline;
     }
-}
 
-// container for header profile pic
-.header-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 4em 1.5em 2.5em 1.5em;
-}
+    h1.name {
+        display: inline-block;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 2rem;
+        color: black;
+    }
 
-.header-img img {
-    max-width: 100%;
-    max-height: 700px;
-    object-fit: contain;
+    h2 {
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 2rem;
+    }
+
 }
 
 .aside-logo {
@@ -152,6 +141,68 @@
     top: 24px;
     left: 2.1em;
 }
+
+// word animation
+.box {
+    position: relative;
+    display: inline-block;
+}
+
+.word {
+    display: inline-block;
+    color: black;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 2rem;
+    width: min-content;
+}
+
+.word span {
+    position: absolute;
+    top: -20px;
+    animation: animate 10s linear infinite;
+    opacity: 0;
+}
+
+@keyframes animate
+{
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    2% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    18% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+.word span:nth-child(1) {
+    animation-delay: 0s;
+}
+.word span:nth-child(2) {
+    animation-delay: 2s;
+}
+.word span:nth-child(3) {
+    animation-delay: 4s;
+}
+.word span:nth-child(4) {
+    animation-delay: 6s;
+}
+.word span:nth-child(5) {
+    animation-delay: 8s;
+}
+// End of word animation
 
 // right-hand side aside
 // .theme-mode {

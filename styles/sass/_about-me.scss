@@ -1,8 +1,9 @@
 // .about-me section begins
 .about-me {
     text-align: center;
-    padding: 1em 0 1em 0;
+    padding: 2em;
     line-height: 1.2em;
+    display: flex;
 
     .wrapper {
         display: flex;
@@ -16,4 +17,22 @@
     h2 {
         font-size: 1.2rem;
     }
+
+    // container for profile pic
+.about-me-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1em 1.5em 2.5em 1.5em;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-me-img img {
+    // max-width: 100%;
+    // max-height: 700px;
+    // object-fit: contain;
+}
 }
