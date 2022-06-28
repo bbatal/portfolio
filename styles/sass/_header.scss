@@ -156,6 +156,11 @@
     width: min-content;
 }
 
+.span-swim::after {
+    background: url('https://api.iconify.design/emojione/person-swimming.svg') no-repeat center center / contain;
+    content: '';
+}
+
 .word span {
     position: absolute;
     top: -20px;
